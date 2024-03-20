@@ -23,6 +23,9 @@
 ### Day05 Finished
    - 学习了面向对象
 
+### Day06 Finished
+   - 学习了装饰器
+
 
 
 

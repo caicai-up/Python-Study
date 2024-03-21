@@ -2,13 +2,13 @@ import socket
 
 if __name__ == '__main__':
     # 1、创建客户端套接字对象
-    tcp_client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    clientSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     # 2、和服务器端套接字建立连接(参数必须是一个元祖)
-    tcp_client_socket.connect(("127.0.0.1", 8090))
+    clientSocket.connect(("127.0.0.1", 8090))
     # 3、发送数据
-    tcp_client_socket.send('123'.encode(encoding='utf-8'))
+    clientSocket.send('123'.encode(encoding='utf-8'))
     # 4、接收数据
-    recv_data = tcp_client_socket.recv(1024).decode('utf-8')
+    recv_data = clientSocket.recv(1024).decode('utf-8')
     print(recv_data)
     # 5、关闭客户端套接字
-    tcp_client_socket.close()
+    clientSocket.close()

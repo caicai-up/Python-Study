@@ -29,6 +29,9 @@
 ### Day07 Finished
    - 学习了网络编程
 
+### Day08 Finished
+   - 学习了Python操作MySQL
+
 
 
 
